@@ -4,8 +4,14 @@ st.set_page_config(page_title="Bioinformatics Toolkit", layout="wide")
 st.title("🧬 SeqLite ")
 
 # Sidebar Navigation
-tools = st.tabs(["Home", "Sequence Translator", "GC Content Calculator","Reverse Complement","Protein Molecular Weight","About"])
-
+tools = [
+    "Home",
+    "Sequence Translator",
+    "GC Content Calculator",
+    "Reverse Complement",
+    "Protein Molecular Weight",
+    "About"
+]
 selection = st.sidebar.radio("Select a Tool", tools)
 
 # -------------------- HOME --------------------
